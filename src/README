@@ -1,0 +1,51 @@
+##NOMBRE
+Sistema de Gestión de Tareas
+
+## Descripción
+
+Una aplicación de consola desarrollada en Java que permite administrar el registro de tareas pendientes, urgentes y completadas.
+
+## Tecnologías Utilizadas
+
+- Lenguaje de Programación: Java.
+- Paradigma: Programación Orientada a Objetos (POO) y Genéricos (<T>).
+- Estructura de Datos Propia: Lista Ligada Simple (Node y SinglyLinkedList).
+- Entorno de Desarrollo: IntelliJ IDEA.
+
+## Requisitos Previos
+
+- Tener instalado el kit de desarrollo de Java (**JDK**) en tu equipo.
+
+## Código
+
+El proyecto está diseñado bajo una arquitectura modular limpia dividida en 4 clases principales:
+
+* La Clase Node.java (El Nodo Genérico)
+Representa la unidad básica de almacenamiento en la lista ligada.
+Atributos: Guarda el dato de tipo genérico (data) y la referencia al siguiente nodo (next).
+Métodos: Constructores, getters, setters y la sobrescritura del método toString() para mostrar el contenido del nodo.
+
+* La Clase SinglyLinkedList.java (La Lista Ligada Propia)
+Controla el flujo, inserción, recorrido y manipulación de los nodos en memoria.
+Operaciones Principales:
+insertLast / insertFirst: Agrega nuevas tareas al final o al principio de la lista.
+traverse(): Recorre toda la lista mostrando los elementos almacenados.
+remove(): Busca y elimina una tarea específica de la lista de forma dinámica.
+countTasks(): Recorre la lista contando el total exacto de tareas registradas.
+updateTaskStatus(): Permite buscar una tarea por su nombre y modificar su estado interno en tiempo de ejecución.
+
+* La Clase Tareas.java (Control Principal y Menú)
+Contiene la función principal main y gestiona la interacción con el usuario mediante la consola.
+Menú Interactivo (do-while + switch): Mantiene el sistema activo permitiendo seleccionar entre las diferentes opciones de gestión hasta que el usuario decida salir.
+
+## Uso
+* Compilar y Ejecutar:
+Abre tu entorno de desarrollo, asegúrate de tener los 4 archivos en el mismo paquete y ejecuta la clase principal Tareas.java.
+
+* Navegación en Consola:
+Selecciona la opción deseada ingresando el número correspondiente en el menú (1 al 6).
+
+## Autor
+
+**Ilde Rayon Cid**
+- Email: ilray930@@gmail.com
